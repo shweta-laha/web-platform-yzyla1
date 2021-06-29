@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Roboto+Mono&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-	font-family: ubuntu;
+	font-family: sans-serif;
 }
 
 header {
@@ -12,12 +13,6 @@ header {
   align-items: center;
   background: #e7e7ff;
 }
-
-.header1{
-  background: yellow;
-  font-family: "Libre Baskerville";
-}
-
 header img {
   width: 50px;
   background:yellow;
@@ -25,29 +20,77 @@ header img {
   margin: 0 20px 0 40px;
 }
 
-.intro {
-  margin-left: 40px;
-  text-align:left;
+.header1{
+  background: yellow;
+  font-family: "Libre Baskerville",sans-serif;
+}
+.navigation {
+  display: flex;
+  margin-left: 50%;
+  justify-content: space-between;
+  padding: 0.5em 1.5em;
+}
+.navigation ul{
+  display:flex;
+  list-style: none;
+}
+li{
+  margin: 0 10px 0 10px;
+}
+a:-webkit-any-link{
+  color: white;
+}
 
+hr{
+  width: 100%;
+  height: 0px;
+  border: 1px solid black;
+  margin: 0 0 0 0;
+  color: black;
+ 
+}
+
+.head{
+  font-family:'Secular One' ;
+  font-weight: 400;
+  color: white;
+  font-size: 2.5em;
+  background-color: #00eaff;
+  text-align: center;
+  padding: 1em 2em 1em 2em;
+}
+.head  img{
+  border-radius: 100px;
+}
+
+.intro {
+  padding: 20px 20px 20px 30px; 
+  text-align:left;
+  font-family: "Big Shoulder Display";
+  font-size: 20px;
+  background-color: #2b2f36;
+  color: white;
+  font-weight: 200;
 }
 
 .card {
   background: white;
   float: left;
+  width: 40%;
   border: 3px solid #a0a0a0;
-  width: 25%;
-  height: 25%;
-  margin: 20px 10px 10px 20px;
+  height: 30%;
+  margin: 20px 20px 10px 20px;
   border-radius: 10px;
   padding: 10px;
 
 }
 
-hr, article .date {
+div .date {
   color: #a0a0a0;
 }
 
 .collapsible {
+  font-family: "Roboto Mono";
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -64,12 +107,12 @@ hr, article .date {
   background-color: #555;
 }
 
-
-
 .content {
-  padding: 0 18px;
+  font-family:"Big Shoulder Display" ;
+  font-size: 18px;
+  padding: 0 15px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: ;
 }
