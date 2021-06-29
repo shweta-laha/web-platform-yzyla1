@@ -1,10 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Roboto+Mono&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-	font-family: ubuntu;
+	font-family: sans-serif;
+  background-image: url("C:\Users\hp\web-platform-yzyla1\images\b2.jpg");
+  
 }
 
 header {
@@ -12,42 +15,91 @@ header {
   align-items: center;
   background: #e7e7ff;
 }
-
-.header1{
-  background: yellow;
-  font-family: "Libre Baskerville";
-}
-
 header img {
   width: 50px;
-  background:yellow;
   border-radius: 10px;
   margin: 0 20px 0 40px;
 }
+.navigation :any-link{
+  color: black;
+  text-decoration: none;
+}
+.header1{
+  background: linear-gradient(to right, rgba(247, 91, 35),rgba(252, 186, 3),rgba(250, 243,0.2));
+  font-family: "Libre Baskerville",sans-serif;
+  
+}
+.navigation {
+  display: flex;
+  margin-left: 50%;
+  justify-content: space-between;
+}
+.navigation ul {
+  display:flex;
+  list-style: none;
+}
 
+.navigation a{
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+.navigation a:hover{
+  transition: 0.5s;
+  padding: 10px 20px 10px 20px;
+  background-color: orange;
+}
+hr{
+  width: 100%;
+  height: 0px;
+  border: 1px solid black;
+  margin: 0 0 0 0;
+  color: black;
+ 
+}
+
+.head{
+  font-family:'Secular One' ;
+  font-weight: 400;
+  color: rgb(14, 1, 1);
+  background:linear-gradient(to right,rgba(240, 86, 24,0.6), rgba(224, 113, 22, 0.2), rgba(74, 40, 1,0.5));
+  font-size: 2.5em;
+  text-align: center;
+  padding: 1em 2em 1em 2em;
+}
+
+.list :any-link{
+  color: white;
+  text-decoration: none;
+}
 .intro {
-  margin-left: 40px;
+  padding: 20px 20px 20px 30px; 
   text-align:left;
-
+  font-family: "Big Shoulder Display";
+  font-size: 20px;
+  background-color: rgb(16, 16, 17);
+  color: white;
+  font-weight: 200;
 }
 
 .card {
   background: white;
   float: left;
+  width: 40%;
+  padding-left: 70px;
   border: 3px solid #a0a0a0;
-  width: 25%;
-  height: 25%;
-  margin: 20px 10px 10px 20px;
+  height: 30%;
+  margin: 20px 20px 10px 20px;
   border-radius: 10px;
   padding: 10px;
 
 }
 
-hr, article .date {
+div .date {
   color: #a0a0a0;
 }
 
 .collapsible {
+  font-family: "Roboto Mono";
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -64,12 +116,30 @@ hr, article .date {
   background-color: #555;
 }
 
-
-
 .content {
-  padding: 0 18px;
+  font-family:"Big Shoulder Display" ;
+  font-size: 18px;
+  padding: 0 15px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.centered {
+  position: absolute;
+  top:70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
