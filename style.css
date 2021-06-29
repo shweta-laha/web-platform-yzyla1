@@ -25,13 +25,22 @@ header img {
   margin: 0 20px 0 40px;
 }
 
-article {
+.intro {
+  margin-left: 40px;
+  text-align:left;
+
+}
+
+.card {
   background: white;
+  float: left;
   border: 3px solid #a0a0a0;
-  width: 90%;
-  margin: 20px auto;
+  width: 25%;
+  height: 25%;
+  margin: 20px 10px 10px 20px;
   border-radius: 10px;
   padding: 10px;
+
 }
 
 hr, article .date {
@@ -39,7 +48,7 @@ hr, article .date {
 }
 
 .collapsible {
-  background-color: #f8be72;
+  background-color: #777;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -50,14 +59,17 @@ hr, article .date {
   font-size: 15px;
 }
 
+
 .active, .collapsible:hover {
-  background-color:linear-gradient(to right, rgba(
-252, 140, 3,0.4), rgba(245, 224, 105,0.4));
+  background-color: #555;
 }
+
+
 
 .content {
   padding: 0 18px;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
