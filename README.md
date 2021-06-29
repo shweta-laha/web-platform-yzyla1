@@ -1,3 +1,3 @@
 # web-platform-yzyla1
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-yzyla1)
+[My Personal Blog Project]("https://akshatnema.github.io/web-platform-yzyla1/")
